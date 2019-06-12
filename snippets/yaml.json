@@ -1,0 +1,59 @@
+{
+    "Question": {
+        "prefix": "question",
+        "scope": "yaml",
+        "body": [
+            "- questionText: ${1:Question}",
+            "  uploaded: false",
+            "  tags:",
+            "    - ${0:Tag1}",
+            "  link: \"${0:Link}\"",
+            "  choices:",
+            "    - text: ${0:Answer 1}",
+            "      correctAnswer: true",
+            "      explanation: |",
+            "        ${0:Reason 1}",
+            "    - text: ${0:Answer 2}",
+            "      correctAnswer: false",
+            "      explanation: |",
+            "        ${0:Reason 2}",
+            "    - text: ${0:Answer 3}",
+            "      correctAnswer: false",
+            "      explanation: |",
+            "        ${0:Reason 3}",
+            "    - text: ${0:Answer 4}",
+            "      correctAnswer: false",
+            "      explanation: |",
+            "        ${0:Reason 4}"
+        ],
+        "description": "CloudCraft Exam/Quiz Question"
+    },
+    "None_of_These": {
+        "prefix": "nno",
+        "scope": "yaml",
+        "body": "\"None of these choices.\"",
+        "description": "Quiz 'none' Answer"
+    },
+    "One_of_These": {
+        "prefix": "oone",
+        "scope": "yaml",
+        "body": "\"One of these choices is correct.\"",
+        "description": "Quiz 'one' Answer"
+    },
+    "All_of_These": {
+        "prefix": "aall",
+        "scope": "yaml",
+        "body": "\"All of these choices.\"",
+        "description": "Quiz 'all' Answer"
+    },
+    "Flash_Card": {
+        "prefix": "flash",
+        "scope": "yaml",
+        "body": [
+            "- front: ${1:Question}",
+            "  back: ${2:Answer}",
+            "  uploaded: false"
+        ],
+        "description": "Linux Academy Flash Card"
+    }
+}

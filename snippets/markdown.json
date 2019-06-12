@@ -1,0 +1,50 @@
+{
+    "Lecture_Outline": {
+        "prefix": "outline",
+        "scope": "markdown",
+        "body": [
+            "<!-- tags: ${0:Tags} -->",
+            "",
+            "${1:Intro}",
+            "",
+            "${0:*Note:* the commands in this video are run as the \\`root\\` user.}",
+            "",
+            "#### Documentation For This Video",
+            "",
+            "* [${0:Resource 1}][1]",
+            "* [${0:Resource 2}][2]",
+            "",
+            "#### ${0:Heading 1}",
+            "",
+            "#### ${0:Heading 2}",
+            "",
+            "[1]: ${0:Link 1}",
+            "[2]: ${0:Link 2}"
+        ],
+        "description": "Linux Academy Lecture Outline"
+    },
+    "Lab_Outline": {
+        "prefix": "llab",
+        "scope": "markdown",
+        "body": [
+            "<!-- tags: ${0:Tags} -->",
+            "",
+            "## Live Env Name",
+            "",
+            "${1:Name}",
+            "",
+            "## Description",
+            "",
+            "## Scenario",
+            "",
+            "## Image Type",
+            "",
+            "## Custom Additions to Image",
+            "",
+            "## Tasks",
+            "",
+            "## Notes"
+        ],
+        "description": "Linux Academy Hands-on Lab Outline"
+    }
+}
