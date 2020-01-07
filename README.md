@@ -1,65 +1,37 @@
-# la-cc-uploader-snippets README
+# la-cc-uploader-snippets
 
-This is the README for your extension "la-cc-uploader-snippets". After writing up a brief description, we recommend including the following sections.
+This package provides snippets for working creating flash cards and exam questions withing CC and LA.
 
-## Features
+## Installation
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Download the extension to your extensions directory
 
-For example if there is an image subfolder under your extension project workspace:
+```
+cd ~/.vscode/extensions
+git clone https://github.com/keiththomps/la-cc-uploader-snippets.git
+```
 
-\!\[feature X\]\(images/feature-x.png\)
+You may not have snippet expansion enabled for YAML strings. If you don't see an expansion in a new YAML file when you type `que` then add the following to your settings JSON (You can type `Cmd+Shift+P` and search for "settings json" to get to this file):
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+```json
+{
+  // other settings
+  "[yaml]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  }
+}
+```
 
-## Requirements
+## Usage
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+From within a YAML file you can run the following snippets
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- `que` - Expands into a question item.
+- `nno` - Expands to `None of these choices.`
+- `oone` - Expands to `One of these choices is correct.`
+- `aall` - Expands to `All of these choices.`
+- `flash` - Expands into a flash card item.

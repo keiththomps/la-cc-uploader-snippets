@@ -1,59 +1,59 @@
 ﻿{
-    "Question": {
-        "prefix": "idk wtf",
-        "scope": "yaml",
-        "body": [
-            "- questionText: ${1:Question}",
-            "  uploaded: false",
-            "  tags:",
-            "    - ${2:Tag1}",
-            "  videoName: \"${3:meow meow video}\"",
-            "  choices:",
-            "    - text: ${4:totally true}",
-            "      correctAnswer: true",
-            "      explanation: |",
-            "        ${5:Reason 1}",
-            "    - text: ${6:totally not ture}",
-            "      correctAnswer: false",
-            "      explanation: |",
-            "        ${7:Reason 2}",
-            "    - text: ${8:Answer 3}",
-            "      correctAnswer: false",
-            "      explanation: |",
-            "        ${9:Reason 3}",
-            "    - text: ${10:Answer 4}",
-            "      correctAnswer: false",
-            "      explanation: |",
-            "        ${11:Reason 4}"
-        ],
-        "description": "CloudCraft Exam/Quiz Question"
-    },
-    "None_of_These": {
-        "prefix": "nno",
-        "scope": "yaml",
-        "body": "\"None of these choices.\"",
-        "description": "Quiz 'none' Answer"
-    },
-    "One_of_These": {
-        "prefix": "oone",
-        "scope": "yaml",
-        "body": "\"One of these choices is correct.\"",
-        "description": "Quiz 'one' Answer"
-    },
-    "All_of_These": {
-        "prefix": "aall",
-        "scope": "yaml",
-        "body": "\"All of these choices.\"",
-        "description": "Quiz 'all' Answer"
-    },
-    "Flash_Card": {
-        "prefix": "flash",
-        "scope": "yaml",
-        "body": [
-            "- front: ${1:Question}",
-            "  back: ${2:Answer}",
-            "  uploaded: false"
-        ],
-        "description": "Linux Academy Flash Card"
-    }
+  "Question": {
+    "prefix": "que",
+    "scope": "yaml",
+    "body": [
+      "- questionText: ${1:Question}",
+      "  uploaded: false",
+      "  tags:",
+      "    - ${2:Tag1}",
+      "  videoName: \"${3:meow meow video}\"",
+      "  choices:",
+      "    - text: ${4:totally true}",
+      "      correctAnswer: true",
+      "      explanation: |",
+      "        ${5:Reason 1}",
+      "    - text: ${6:totally not ture}",
+      "      correctAnswer: false",
+      "      explanation: |",
+      "        ${7:Reason 2}",
+      "    - text: ${8:Answer 3}",
+      "      correctAnswer: false",
+      "      explanation: |",
+      "        ${9:Reason 3}",
+      "    - text: ${10:Answer 4}",
+      "      correctAnswer: false",
+      "      explanation: |",
+      "        ${11:Reason 4}"
+    ],
+    "description": "CloudCraft Exam/Quiz Question"
+  },
+  "None_of_These": {
+    "prefix": "nno",
+    "scope": "yaml",
+    "body": "\"None of these choices.\"",
+    "description": "Quiz 'none' Answer"
+  },
+  "One_of_These": {
+    "prefix": "oone",
+    "scope": "yaml",
+    "body": "\"One of these choices is correct.\"",
+    "description": "Quiz 'one' Answer"
+  },
+  "All_of_These": {
+    "prefix": "aall",
+    "scope": "yaml",
+    "body": "\"All of these choices.\"",
+    "description": "Quiz 'all' Answer"
+  },
+  "Flash_Card": {
+    "prefix": "flash",
+    "scope": "yaml",
+    "body": [
+      "- front: ${1:Question}",
+      "  back: ${2:Answer}",
+      "  uploaded: false"
+    ],
+    "description": "Linux Academy Flash Card"
+  }
 }
