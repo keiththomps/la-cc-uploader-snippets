@@ -7,7 +7,6 @@
       "  uploaded: false",
       "  tags:",
       "    - ${2:Tag1}",
-      "  videoName: \"${3:meow meow video}\"",
       "  choices:",
       "    - text: ${4:totally true}",
       "      correctAnswer: true",
